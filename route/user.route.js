@@ -1,12 +1,11 @@
 import express from "express";
 import {
   deleteUser,
-  getUser,
-  getUsers,
+  // getUsers,
   updateUser,
   savePost,
   profilePosts,
-  getNotificationNumber
+  getNotificationNumber,
 } from "../controllers/user.controller.js";
 import { verifyToken } from "../middleware/verifiedToken.js";
 
