@@ -12,6 +12,10 @@ import messageRoutes from "./route/message.route.js";
 const app = express();
 dotenv.config();
 
+app.get("hello", (req, res) => {
+  res.send("hello there");
+});
+
 // middleware
 app.use(express.json());
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
