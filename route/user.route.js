@@ -1,7 +1,7 @@
 import express from "express";
 import {
   deleteUser,
-  // getUsers,
+  getUsers,
   updateUser,
   savePost,
   profilePosts,
