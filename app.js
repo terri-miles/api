@@ -18,7 +18,7 @@ app.get("/hello", (req, res) => {
 
 // middleware
 app.use(express.json());
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+app.use(cors({ origin: 'https://express-realestate.vercel.app', credentials: true }));
 app.use(cookieParser());
 // app.options('*', cors());
 
