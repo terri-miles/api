@@ -20,6 +20,9 @@ app.get("/hello", (req, res) => {
 app.use(express.json());
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(cookieParser());
+app.options('*', cors());
+
+
 app.use("/api/v1", authRouth);
 app.use("/api/v1/test", testRoute);
 app.use("/api/v1/", updateUserRoute);
